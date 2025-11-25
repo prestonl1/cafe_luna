@@ -1,5 +1,23 @@
 /* CafeLuna Project - Starter Styles */
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman&subset=greek">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overlock&subset=latin">
+
+:root{ /*equivalent to html*/
+    /*default fonts*/
+    --titlefont: "Charmonman";
+    --bodyfont: "Overlock";
+    /*default colors for light mode*/
+    --dmcolorcontrast: black;
+    --lmcolorhighlight: #B18F4A;
+    --lmcolorbase: #FFC444;
+    --lmcolorborder: #322712;
+    /*default colors for dark mode*/
+    --dmcolorcontrast: #E7D7C1;
+    --dmcolorhighlight: #BF4342;
+    --dmcolorbase: #8C1C13;
+    --dmcolorborder: #190B28;
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
