@@ -1,0 +1,63 @@
+/* menu styles (Preston) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #FFE4c4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;    
+    align-items: flex-start;
+}
+
+.leftside {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.logo {
+    width: 15vw;
+    height: auto;
+}
+
+header h1 {
+    margin: 2vw;
+    font-size: 3vw;    
+    font-family: cursive, Arial, Helvetica, sans-serif;    
+}
+
+header nav {
+    width: 100%;
+    background-color: #c4a484;
+    border-radius: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;   /* lay out the children in a row or column */
+    gap: 4vw;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+ }
+
+#top-message {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3vw;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+    margin-top: 2vw;
+}
+
