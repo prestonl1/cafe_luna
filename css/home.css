@@ -17,11 +17,24 @@ body
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    img{
+        width: 20px;
+        height: auto;
+    }
+    @media screen and (prefers-color-scheme: dark) {
+        img{
+            filter: invert(100%);
+        }
+    }
     h1{
-        margin-left: 20px;
+        padding-top: 2vh;
+        padding-left: 5vh;
+        text-shadow: 2px 2px 1px var(--base);
+        /*
         background-color: var(--base);
         padding: 3px 10px;
         border-radius:0px 15px 15px 15px;
+        */
     }
     ul{
         margin-right: 20px;
@@ -32,7 +45,16 @@ body
         background-color: var(--base);
         padding: 4px 10px;
         border-radius:15px 0px 15px 15px;
+        li{
+            display: none;
+        }
     }
+    ul:hover{
+        li{
+        display: inline;
+        }
+    }
+    
     @media screen and (max-width: 500px) {
         ul{
             flex-direction: column;
@@ -97,13 +119,21 @@ header{
 }
 
 footer{
-    height: 4rem;
-    width: 100%;
-    background-color: var(--highlight);
+    background-color: var(--accent);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    p{
-        padding: 10px;
+    flex-direction: column;
+    a{
+        align-self: center;
+    }
+    section{
+        height: 4rem;
+        width: 100%;
+        background-color: var(--highlight);
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        p{
+            padding: 10px;
+        }
     }
 }
