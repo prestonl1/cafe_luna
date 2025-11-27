@@ -2,27 +2,51 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman&subset=greek">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overlock&subset=latin">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="style.css">
 
 :root{ /*equivalent to html*/
     /*default fonts*/
-    --titlefont: "Charmonman";
-    --bodyfont: "Overlock";
+    --title: "Charmonman", "Times New Roman", sans-serif;
+    --body: "Overlock", Helvetica, sans-serif;
     /*default colors for light mode*/
-    --dmcolorcontrast: black;
-    --lmcolorhighlight: #B18F4A;
-    --lmcolorbase: #FFC444;
-    --lmcolorborder: #322712;
-    /*default colors for dark mode*/
-    --dmcolorcontrast: #E7D7C1;
-    --dmcolorhighlight: #BF4342;
-    --dmcolorbase: #8C1C13;
-    --dmcolorborder: #190B28;
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+}
+@media screen and (prefers-color-scheme: light){
+    :root{
+        --text: black;
+        --highlight: #B18F4A;
+        --base: #FFC444;
+        --accent: #322712;
+    }
 }
 
-/* Add your styles here */
+@media screen and (prefers-color-scheme: dark){
+    :root{
+        /*default colors for dark mode*/
+        --text: #E7D7C1;
+        --highlight: #BF4342;
+        --base: #8C1C13;
+        --accent: #190B28;
+    }
+}
+
+html{
+    color-scheme: dark light;
+    text-color: --text;
+
+}
+
+body {
+    min-height: 100%;
+    text-color: --text;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    font-family: var(--title);
+}
 

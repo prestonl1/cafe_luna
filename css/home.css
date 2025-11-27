@@ -1,0 +1,109 @@
+@import 'style.css';
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body
+{
+    width: 100%;
+    margin: 0%;
+}
+
+.top-bar{
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    h1{
+        margin-left: 20px;
+        background-color: var(--base);
+        padding: 3px 10px;
+        border-radius:0px 15px 15px 15px;
+    }
+    ul{
+        margin-right: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1rem;
+        list-style-type: none;
+        background-color: var(--base);
+        padding: 4px 10px;
+        border-radius:15px 0px 15px 15px;
+    }
+    @media screen and (max-width: 500px) {
+        ul{
+            flex-direction: column;
+        }
+    }
+}
+
+
+
+header{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('../media/light-port.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    .scrolltape{
+        background-color: var(--highlight);
+        align-self: center;
+        animation: bounce 3s linear infinite;
+        h2{
+            color: var(--accent);
+            display: inline;
+        }    
+    }
+}
+
+@keyframes bounce {
+0% {transform: translate(0, 0);}
+7% {transform: translate(0, 10px);}
+15% {transform: translate(0, 0);}
+100% {transform: translate(0, 0);}
+}
+
+@media screen and (orientation: landscape){
+    header{
+        background-image: url('../media/light-land.jpg');
+    }
+}
+
+@media screen and (prefers-color-scheme: dark){
+    header{
+        background-image: url('../media/dark-port.jpg');
+    }
+}
+
+@media screen and (orientation: landscape) and (prefers-color-scheme: dark){
+    header{
+        background-image: url('../media/dark-land.jpg');
+    }
+}
+
+.special{
+    display: grid;
+    background-color: accent;
+    height 60vh;
+    margin 20px;
+}
+
+footer{
+    height: 4rem;
+    width: 100%;
+    background-color: var(--highlight);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        padding: 10px;
+    }
+}
