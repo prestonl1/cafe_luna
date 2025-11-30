@@ -1,9 +1,5 @@
 /* CafeLuna Project - Starter Styles */
 
-:root{ /*equivalent to html*/
-    /*default fonts*/
-    /*default colors for light mode*/
-}
 @media screen and (prefers-color-scheme: light){
     :root{
         --text: black;
