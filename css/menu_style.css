@@ -1,63 +1,159 @@
 /* menu styles (Preston) */
 body {
-    font-family: Arial, sans-serif;
+    width: 100%;
     margin: 0;
-    padding: 0;
 }
 
-html {
+:root {
     background-color: #FFE4c4;
+    scroll-behavior: smooth;
+    font-family: cursive, Arial, Helvetica, sans-serif;
 }
 
 header {
     display: flex;
     justify-content: space-between;    
     align-items: flex-start;
+    h1 {
+        margin: 2vw;
+    }
 }
 
 .leftside {
     display: flex;
     align-items: center;
-    width: 100%;
-    
+    width: 100%;    
 }
 
 .logo {
-    width: 15vw;
+    width: clamp(100px, 10vw, 800px);
     height: auto;
 }
 
-header h1 {
-    margin: 2vw;
-    font-size: 3vw;    
-    font-family: cursive, Arial, Helvetica, sans-serif;    
-}
-
-header nav {
+nav {
     width: 100%;
     background-color: #c4a484;
     border-radius: 10px;
-}
-
-header nav ul {
+    ul {
     list-style-type: none;
     display: flex;
-    flex-direction: row;   /* lay out the children in a row or column */
     gap: 4vw;
-}
-
-header nav ul li a {
+    }
+    ul li:hover {
+    transform: scale(1.1);
+    }
+    ul li a {
     text-decoration: none;
     color: black;
-    font-size: 1.5vw;
-    font-family: cursive, Arial, Helvetica, sans-serif;
- }
+    }
+}
+
+@media (min-width: 400px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    .navbar {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    .navbar {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .navbar {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
 
 #top-message {
     text-align: center;
     text-transform: capitalize;
-    font-size: 3vw;
-    font-family: cursive, Arial, Helvetica, sans-serif;
     margin-top: 2vw;
 }
 
+.food {
+    margin-top: 7vw;
+    background-color: #FFFFED;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-radius: 10px;
+    h2 {
+    display: flex;
+    justify-content: center; 
+    }
+}
+
+.snacks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: clamp(220px, 30vw, 320px);
+    }
+    li:hover {
+    transform: scale(1.1);
+    }
+    img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    }
+    p {
+    margin-top: 0.5rem;
+    }
+}
+
+#bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vw;
+    align-items: center;
+    text-transform: capitalize;
+    background-color: #c4a484;
+    margin-bottom: 20px;
+    a {
+    text-decoration: none;
+    padding: 20px 30px;
+    background-color: #FFFFED;
+    border-radius: 5px;
+    }
+    a:hover {
+    transform: scale(1.05);
+    }
+}
