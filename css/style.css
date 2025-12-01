@@ -21,13 +21,12 @@
 
 html{
     color-scheme: dark light;
-    text-color: --text;
-
+    color: var(--text);
 }
 
 body {
     min-height: 100%;
-    text-color: --text;
+    color: var(--text);
     font-family:"Overlock", sans-serif;
 }
 
