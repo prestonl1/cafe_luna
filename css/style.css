@@ -1,16 +1,5 @@
 /* CafeLuna Project - Starter Styles */
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman&subset=greek">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overlock&subset=latin">
-<link rel="stylesheet" href="home.css">
-<link rel="stylesheet" href="style.css">
-
-:root{ /*equivalent to html*/
-    /*default fonts*/
-    --title: "Charmonman", "Times New Roman", sans-serif;
-    --body: "Overlock", Helvetica, sans-serif;
-    /*default colors for light mode*/
-}
 @media screen and (prefers-color-scheme: light){
     :root{
         --text: black;
@@ -39,6 +28,7 @@ html{
 body {
     min-height: 100%;
     text-color: --text;
+    font-family:"Overlock", sans-serif;
 }
 
 img{
@@ -47,6 +37,6 @@ img{
 }
 
 h1{
-    font-family: var(--title);
+    font-family:"Charmonman", cursive;
 }
 
