@@ -41,7 +41,7 @@ body
         margin-right: 20px;
         display: flex;
         flex-direction: row-reverse;
-        gap: 1rem;
+        gap: 5px;
         list-style-type: none;
         background-color: var(--base);
         opacity: 90%;
@@ -54,6 +54,7 @@ body
                 color: var(--text);
             }
         }
+        
         
     }    
     ul:hover{
@@ -70,18 +71,21 @@ body
             flex-direction: column;
             li:nth-child(5){
             padding-bottom: 6px;
-        }
+            gap: 1rem;
+            }
         }
     }
 }
 
+
+
 header{
-    width: auto;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-image: url('../media/light-port.jpg');
+    justify-content: top;
+    background-color: var(--accent);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -98,46 +102,18 @@ header{
         padding: 4px 10px;
         opacity: 90%;
     }
-    .bounce{
-        background-color: var(--highlight);
-        align-self: center;
-        animation: bounce 3s linear infinite;
-        .wsplink{
-            color: var(--accent);
-            display: inline;
-            text-decoration: none;
-            font-size: x-large;
-        }
-        .wsplink:hover{
-            color: var(--text);
-        }    
-    }
 }
 
-@keyframes bounce {
-0% {transform: translate(0, 0);}
-7% {transform: translate(0, 10px);}
-15% {transform: translate(0, 0);}
-100% {transform: translate(0, 0);}
+.about{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 8;
+    background-color: var(--highlight);
+    
 }
 
-@media screen and (orientation: landscape){
-    header{
-        background-image: url('../media/light-land.jpg');
-    }
-}
 
-@media screen and (prefers-color-scheme: dark){
-    header{
-        background-image: url('../media/dark-port.jpg');
-    }
-}
 
-@media screen and (orientation: landscape) and (prefers-color-scheme: dark){
-    header{
-        background-image: url('../media/dark-land.jpg');
-    }
-}
 
 .special{
     display: flex;
