@@ -19,6 +19,7 @@ body
 }
 
 .top-bar{
+    font-size: small;
     position: relative;
     overflow-y: hidden;
     display: flex;
@@ -82,13 +83,19 @@ body
     }
 }
 
+@media screen and (min-width: 1000px) {
+    .top-bar{
+        font-size: xx-large;
+    }
+}
+
 header{
     width: auto;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url('../media/light-port.jpg');
+    background-image: url('../images/light-port.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -130,19 +137,19 @@ header{
 
 @media screen and (orientation: landscape){
     header{
-        background-image: url('../media/light-land.jpg');
+        background-image: url('../images/light-land.jpg');
     }
 }
 
 @media screen and (prefers-color-scheme: dark){
     header{
-        background-image: url('../media/dark-port.jpg');
+        background-image: url('../images/dark-port.jpg');
     }
 }
 
 @media screen and (orientation: landscape) and (prefers-color-scheme: dark){
     header{
-        background-image: url('../media/dark-land.jpg');
+        background-image: url('../images/dark-land.jpg');
     }
 }
 
@@ -155,7 +162,7 @@ header{
     border-color: var(--accent);
     border-style: solid;
     justify-content: center;
-    background-image: url('../media/beans.jpg');
+    background-image: url('../images/beans.jpg');
 }
 
 .spackground{
