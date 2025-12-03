@@ -239,7 +239,7 @@ footer{
     display: flex;
     flex-direction: column;
     a{
-        height: 5vh;
+        height: 6vh;
         align-self: center;
         color: var(--text);
     }
