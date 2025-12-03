@@ -5,9 +5,8 @@ body {
 }
 
 :root {
-    background-color: #FFE4c4;
+    background-color: var(--highlight);
     scroll-behavior: smooth;
-    font-family: cursive, Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -22,7 +21,7 @@ header {
 .leftside {
     display: flex;
     align-items: center;
-    width: 100%;    
+    width: 100%; 
 }
 
 .logo {
@@ -32,7 +31,7 @@ header {
 
 nav {
     width: 100%;
-    background-color: #c4a484;
+    background-color: var(--base);
     border-radius: 10px;
     ul {
     list-style-type: none;
@@ -44,7 +43,7 @@ nav {
     }
     ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--text);
     }
 }
 
@@ -101,13 +100,14 @@ nav {
 
 .food {
     margin-top: 7vw;
-    background-color: #FFFFED;
+    background-color: var(--base);
     margin-left: 10vw;
     margin-right: 10vw;
     border-radius: 10px;
     h2 {
     display: flex;
     justify-content: center; 
+    padding-top: 2rem;
     }
 }
 
@@ -145,7 +145,7 @@ nav {
     margin-top: 5vw;
     align-items: center;
     text-transform: capitalize;
-    background-color: #c4a484;
+    background-color: var(--highlight);
     margin-bottom: 20px;
     a {
     text-decoration: none;
