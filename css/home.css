@@ -19,6 +19,7 @@ body
 }
 
 .top-bar{
+    font-size: small;
     position: relative;
     overflow-y: hidden;
     display: flex;
@@ -79,6 +80,12 @@ body
             padding-bottom: 6px;
         }
         }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .top-bar{
+        font-size: xx-large;
     }
 }
 
