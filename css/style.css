@@ -1,20 +1,20 @@
 /* CafeLuna Project - Starter Styles */
 
 @media screen and (prefers-color-scheme: light){
-    :root{
+    html{
         --text: black;
-        --highlight: #B18F4A;
-        --base: #FFC444;
+        --highlight: #c4a484 /*#B18F4A*/;
+        --base: #FFE4c4;
         --accent: #322712;
     }
 }
 
 @media screen and (prefers-color-scheme: dark){
-    :root{
+    html{
         /*default colors for dark mode*/
-        --text: #E7D7C1;
-        --highlight: #BF4342;
-        --base: #8C1C13;
+        --text: #FFFFED;
+        --highlight: #580000;
+        --base: #8b0000;
         --accent: #190B28;
     }
 }
@@ -27,7 +27,7 @@ html{
 body {
     min-height: 100%;
     color: var(--text);
-    font-family:"Overlock", sans-serif;
+    font-family:"Overlock", Arial, Helvetica, sans-serif;
 }
 
 img{
