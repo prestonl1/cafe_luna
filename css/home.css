@@ -3,6 +3,13 @@
 html{
     scroll-behavior: smooth;
     scrollbar-width: none;
+    font-size:small;
+}
+
+@media screen and (max-width: 2000px){
+    html{
+        font-size:xx-large;
+    }
 }
 
 body
@@ -188,15 +195,17 @@ header{
         grid-row: span 2;
         font-size:medium;
     }
-    @media and (max-width: 600) {
+
+    @media screen and (min-width: 1000px) {
         p{
-            font-size: small;
+            font-size: xx-large;
         }
         em{
-            font-size: small;
+            font-size: xx-large;
         }
         h2{
-        font-size:large;
+        font-size: 96px;
+        margin: 1rem;
         }
     }
 }
@@ -230,7 +239,7 @@ footer{
     display: flex;
     flex-direction: column;
     a{
-        height: 20px;
+        height: 5vh;
         align-self: center;
         color: var(--text);
     }
