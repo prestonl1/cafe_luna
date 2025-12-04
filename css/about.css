@@ -3,6 +3,7 @@
 html{
     scroll-behavior: smooth;
     scrollbar-width: none;
+    background-color: var(--base);
 }
 
 body
@@ -105,101 +106,27 @@ header{
 }
 
 .about{
+    display: inline;
+    height: auto;
+    width: 50%;
+    font-size: x-large;
+    pre{
+        margin: 1rem;
+        font-family:"Overlock", Arial, Helvetica, sans-serif;
+    }
+}
+
+.contacts{
     display: grid;
     grid-template-columns: 2;
     grid-template-rows: 8;
     background-color: var(--highlight);
-    
-}
-
-
-
-
-.special{
-    display: flex;
-    position: relative;
-    width: auto;
-    height: auto;
-    border-top: 20px;
-    border-color: var(--accent);
-    border-style: solid;
-    justify-content: center;
-    background-image: url('../media/beans.jpg');
-}
-
-.spackground{
-    display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 3;
-    background-color: var(--base);
-    position: relative;
-    width: 100vw;
-    margin: 20px;
-    align-self: center;
-    
     h2{
-        grid-column: 1/2;
-        grid-row: 1;
-        font-size:xx-large;
-        margin-left: 20px;
-    }
-    em{
         
-        margin-left: 30px;
-        grid-column: 1;
-        grid-row: 2;
-        font-size: medium;
-        a{
-            color:  var(--text);
-        }
-        
-    }
-    p{
-        
-        margin-left: 40px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        grid-column: 1/2;
-        grid-row: 2;
-        grid-row: span 2;
-        font-size:medium;
-    }
-    @media and (max-width: 600) {
-        p{
-            font-size: small;
-        }
-        em{
-            font-size: small;
-        }
-        h2{
-        font-size:large;
-        }
     }
 }
 
-.spimg{
-    grid-column: 3;
-    grid-row: 1/4;
-    width: 30vw;
-    height: auto;
-    justify-self: right;
-    margin: 20px;
-}
 
-@media screen and (orientation: portrait){
-    .special{
-        margin: 0;
-    }
-    .spackground{
-        display:flex;
-        flex-direction: column;
-    }
-    .spimg{
-        height: auto;
-        width: 100vw;
-        margin: 0;
-    }
-}
 
 footer{
     background-color: var(--accent);
