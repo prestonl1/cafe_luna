@@ -144,6 +144,7 @@ nav {
     flex-direction: column;
     margin-top: 5vw;
     align-items: center;
+    justify-content: center;
     text-transform: capitalize;
     background-color: var(--highlight);
     margin-bottom: 20px;

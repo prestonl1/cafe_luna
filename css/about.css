@@ -3,6 +3,7 @@
 html{
     scroll-behavior: smooth;
     scrollbar-width: none;
+    background-color: var(--base);
 }
 
 body
@@ -77,8 +78,6 @@ body
     }
 }
 
-
-
 header{
     width: 100%;
     height: auto;
@@ -105,99 +104,66 @@ header{
 }
 
 .about{
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 8;
-    background-color: var(--highlight);
-    
-}
-
-
-
-
-.special{
-    display: flex;
-    position: relative;
-    width: auto;
+    width: 100%;
     height: auto;
-    border-top: 20px;
-    border-color: var(--accent);
-    border-style: solid;
-    justify-content: center;
-    background-image: url('../media/beans.jpg');
-}
-
-.spackground{
-    display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 3;
-    background-color: var(--base);
-    position: relative;
-    width: 100vw;
-    margin: 20px;
-    align-self: center;
-    
-    h2{
-        grid-column: 1/2;
-        grid-row: 1;
-        font-size:xx-large;
-        margin-left: 20px;
-    }
-    em{
-        
-        margin-left: 30px;
-        grid-column: 1;
-        grid-row: 2;
-        font-size: medium;
-        a{
-            color:  var(--text);
-        }
-        
-    }
+    font-size: x-large;
     p{
-        
-        margin-left: 40px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        grid-column: 1/2;
-        grid-row: 2;
+        margin: 1rem;
+    }
+}
+
+.contacts{
+    display: grid;
+    grid-template-columns: repeat(2, 2);
+    background-color: var(--highlight);
+    .map{
+        grid-column: 1;
         grid-row: span 2;
-        font-size:medium;
-    }
-    @media and (max-width: 600) {
-        p{
-            font-size: small;
-        }
-        em{
-            font-size: small;
-        }
+        justify-content: center;
         h2{
-        font-size:large;
+            justify-self: right;
+            }
+        .mapframe{
+            width: 197%;
+            height: 30rem;
+            border: 1rem;
+            margin: 1rem;
+            border-style: groove;
+            border-color: var(--accent);
         }
     }
-}
-
-.spimg{
-    grid-column: 3;
-    grid-row: 1/4;
-    width: 30vw;
-    height: auto;
-    justify-self: right;
-    margin: 20px;
-}
-
-@media screen and (orientation: portrait){
-    .special{
-        margin: 0;
+    section{
+        margin: 1rem;
+        grid-row: 3;
+        justify-items: center;
+        ul{
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+        }
     }
-    .spackground{
-        display:flex;
+    ul{
+        grid-row: 3;
+    }
+}
+@media screen and (width < 500px) {
+    .contacts {
+        display: flex;
         flex-direction: column;
-    }
-    .spimg{
-        height: auto;
-        width: 100vw;
-        margin: 0;
+        .map{
+            align-items: center;
+            .mapframe{
+                width: 90%;
+                height: 20rem;
+            }
+        }
+        section{
+            margin: 1rem;
+            justify-self: left;
+            ul{
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
 }
 
@@ -209,9 +175,10 @@ footer{
         height: 20px;
         align-self: center;
         color: var(--text);
+        text-decoration: none;
     }
     a:hover{
-        color: var(--highlight);
+        translate: 0 10px;
     }
     section{
         height: 4rem;
