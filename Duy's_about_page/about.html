@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us - Cozy Brew Cafe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    :root {
+      --primary: #6f4e37;
+      --secondary: #c7a17a;
+      --bg: #fffaf5;
+      --dark: #2c2c2c;
+      --gray: #777;
+      --card: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    /* ===== Hero Section ===== */
+    .about-hero {
+      height: 60vh;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("https://images.unsplash.com/photo-1509042239860-f550ce710b93") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .about-hero h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+
+    /* ===== About Intro ===== */
+    .about-intro {
+      padding: 80px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-intro img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .about-intro h2 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: var(--primary);
+    }
+
+    .about-intro p {
+      color: var(--gray);
+      margin-bottom: 15px;
+    }
+
+    /* ===== Values Section ===== */
+    .values {
+      background: #f5eee6;
+      padding: 70px 0;
+    }
+
+    .values h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: var(--primary);
+      margin-bottom: 40px;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .value-card {
+      background: var(--card);
+      padding: 30px 25px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+      transition: 0.3s ease;
+    }
+
+    .value-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .value-card h3 {
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+
+    .value-card p {
+      font-size: 0.95rem;
+      color: var(--gray);
+    }
+
+    /* ===== Team Section ===== */
+    .team {
+      padding: 80px 0;
+    }
+
+    .team h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: var(--primary);
+      margin-bottom: 40px;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .team-card {
+      background: var(--card);
+      border-radius: 20px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .team-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .team-card h4 {
+      margin-top: 15px;
+      margin-bottom: 4px;
+      color: var(--primary);
+    }
+
+    .team-card span {
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #2c2c2c;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .about-hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Hero ===== -->
+  <section class="about-hero">
+    <h1>About Cafe</h1>
+  </section>
+
+  <!-- ===== Intro ===== -->
+  <section class="about-intro container">
+    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Cafe Image">
+    <div>
+      <h2>Our Story</h2>
+      <p>
+        Cafe was founded with the desire to create a warm and relaxing space
+        where people can connect and enjoy high‑quality coffee.
+      </p>
+      <p>
+        We believe that every cup of coffee tells a story – from carefully selected beans
+        to the skilled hands of our baristas.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Values ===== -->
+  <section class="values">
+    <div class="container">
+      <h2>Our Core Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>Quality</h3>
+          <p>We are committed to using only the finest ingredients in every product.</p>
+        </div>
+        <div class="value-card">
+          <h3>Dedication</h3>
+          <p>We serve our customers with sincerity, care, and passion.</p>
+        </div>
+        <div class="value-card">
+          <h3>Creativity</h3>
+          <p>We continuously innovate to bring the best experience to our guests.</p>
+        </div>
+        <div class="value-card">
+          <h3>Sustainability</h3>
+          <p>We aim to build an environmentally friendly and sustainable business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Team ===== -->
+  <section class="team container">
+    <h2>Meet Our Team</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <h4>Name 1</h4>
+      </div>
+      <div class="team-card">
+        <h4>Name 2</h4>
+      </div>
+      <div class="team-card">
+        <h4>Name 3</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 Cafe. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
