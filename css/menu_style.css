@@ -98,7 +98,7 @@ nav {
     margin-top: 2vw;
 }
 
-.food {
+.menu {
     margin-top: 7vw;
     background-color: var(--base);
     margin-left: 10vw;
@@ -111,7 +111,7 @@ nav {
     }
 }
 
-.snacks {
+.items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
