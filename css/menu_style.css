@@ -5,13 +5,14 @@ body {
 }
 
 :root {
-    background-color: var(--highlight);
+    background-color: var(--highlight); /* depending on the system theme, could be dark mode or light mode colours */
     scroll-behavior: smooth;
 }
 
+/* header has three elements: page title, nav bar, and img*/
 header {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between; /* .leftside on the left, and img on the right */    
     align-items: flex-start;
     h1 {
         margin: 2vw;
@@ -25,7 +26,7 @@ header {
 }
 
 .logo {
-    width: clamp(100px, 10vw, 800px);
+    width: clamp(100px, 10vw, 800px); /* clamp(min, preferred, max)  */
     height: auto;
 }
 
@@ -47,6 +48,7 @@ nav {
     }
 }
 
+/* if at least 400px wide (mobile) */
 @media (min-width: 400px) {
     h1 {
         font-size: 1.4rem;
@@ -62,6 +64,7 @@ nav {
     }
 }
 
+/* if at least 768 px wide (tablet) */
 @media (min-width: 768px) {
     h1 {
         font-size: 1.6rem;
@@ -77,6 +80,7 @@ nav {
     }
 }
 
+/* if at least 1200px wide (monitor, tv screen) */
 @media (min-width: 1200px) {
     h1 {
         font-size: 2.2rem;
@@ -92,12 +96,14 @@ nav {
     }
 }
 
+/* welcome message */
 #top-message {
     text-align: center;
     text-transform: capitalize;
     margin-top: 2vw;
 }
 
+/* styling for each section of the menu */
 .menu {
     margin-top: 7vw;
     background-color: var(--base);
@@ -111,6 +117,7 @@ nav {
     }
 }
 
+/* styling for items in each menu section */
 .items {
     display: flex;
     flex-wrap: wrap;

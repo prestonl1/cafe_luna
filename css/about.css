@@ -128,7 +128,7 @@ header{
     }
 
     ul {
-      list-style-type: disc;
+      list-style-type: disc; /* default is already bullet point, but added it just in case */
       padding-left: 20px;
     }
 
@@ -164,7 +164,7 @@ footer{
     }
 }
 
-
+/* applys only if the screen is at most 600px */
 @media (max-width: 600px) {
   .contacts {
     grid-template-columns: 1fr; /* stack vertically */
