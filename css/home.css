@@ -6,6 +6,8 @@ html{
     font-size:small;
 }
 
+/*makes text bigger on big screens*/
+
 @media screen and (max-width: 2000px){
     html{
         font-size:xx-large;
@@ -18,6 +20,7 @@ body
     margin: 0%;
 }
 
+/*handles cafe name/title and menu*/
 .top-bar{
     font-size: small;
     position: relative;
@@ -29,17 +32,20 @@ body
         width: 20px;
         height: auto;
     }
+    /*makes menu button white in dark mode*/
     @media screen and (prefers-color-scheme: dark) {
         img{
             filter: invert(100%);
         }
     }
+    /*title*/
     h1{
         padding-top: 2vh;
         padding-left: 5vh;
         text-shadow: 2px 2px 1px var(--base),
         0px 0px 2px var(--base);
     }
+    /*on-hover menu*/
     ul{
         margin-right: 20px;
         display: flex;
@@ -50,6 +56,7 @@ body
         opacity: 90%;
         padding: 3px 10px;
         border-radius:15px 0px 15px 15px;
+        /*on-hover menu list items*/
         li{
             display: none;
             a{
@@ -59,6 +66,7 @@ body
         }
         
     }    
+    /*handles on hover menu hovering, excludes small screens because mobile not hover compatible*/
     @media screen and (width > 900px) { 
         ul:hover{
             li{
@@ -69,6 +77,7 @@ body
             }
         }
     }
+    /*on-hover menu for small screens*/
     @media screen and (width < 900px) { 
         ul{
             gap: 0.25rem;
@@ -81,6 +90,7 @@ body
             }
         }
     }
+    /*on-hover menu handles really small screens and portrait mode*/
     @media screen and (max-width: 500px) {
         ul{
             flex-direction: column;
@@ -90,13 +100,13 @@ body
         }
     }
 }
-
+/*makes top bar big for big screens*/
 @media screen and (min-width: 1000px) {
     .top-bar{
         font-size: xx-large;
     }
 }
-
+/*handles most of main page*/
 header{
     width: auto;
     height: 100vh;
@@ -120,6 +130,7 @@ header{
         padding: 4px 10px;
         opacity: 90%;
     }
+    /*does weekly special button and animation*/
     .bounce{
         background-color: var(--highlight);
         align-self: center;
@@ -130,12 +141,13 @@ header{
             text-decoration: none;
             font-size: x-large;
         }
+        /*colour change for animated button*/
         .wsplink:hover{
             color: var(--text);
         }    
     }
 }
-
+/*the animation for animated button*/
 @keyframes bounce {
 0% {transform: translate(0, 0);}
 7% {transform: translate(0, 10px);}
@@ -143,6 +155,7 @@ header{
 100% {transform: translate(0, 0);}
 }
 
+/*these media queries handle hero image change for different situations*/
 @media screen and (orientation: landscape){
     header{
         background-image: url('../images/light-land.jpg');
@@ -173,6 +186,7 @@ header{
     background-image: url('../images/beans.jpg');
 }
 
+/*handles background for the special*/
 .spackground{
     display: grid;
     grid-template-columns: 3;
@@ -182,7 +196,6 @@ header{
     width: 100vw;
     margin: 20px;
     align-self: center;
-    
     h2{
         grid-column: 1/2;
         grid-row: 1;
@@ -210,7 +223,7 @@ header{
         grid-row: span 2;
         font-size:medium;
     }
-
+    /*small screen handling for fonts in special section*/
     @media screen and (min-width: 1000px) {
         p{
             font-size: xx-large;
@@ -225,6 +238,7 @@ header{
     }
 }
 
+/*handles special image*/
 .spimg{
     grid-column: 3;
     grid-row: 1/4;
@@ -234,6 +248,7 @@ header{
     margin: 20px;
 }
 
+/*handles mobile for special*/
 @media screen and (orientation: portrait){
     .special{
         margin: 0;
@@ -249,6 +264,7 @@ header{
     }
 }
 
+/*footer formatting*/
 footer{
     background-color: var(--accent);
     display: flex;
