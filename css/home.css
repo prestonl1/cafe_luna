@@ -64,15 +64,28 @@ body
         }
         
     }    
-    ul:hover{
-        li{
-            display: flex;
-        }
-        li:hover{
-            transform: scale(1.1);
+    @media screen and (width > 900px) { 
+        ul:hover{
+            li{
+                display: flex;
+            }
+            li:hover{
+                transform: scale(1.1);
+            }
         }
     }
-    
+    @media screen and (width < 900px) { 
+        ul{
+            gap: 0.25rem;
+            li{
+                display: inline;
+                margin: 0;
+            }
+            li:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
     @media screen and (max-width: 500px) {
         ul{
             flex-direction: column;
